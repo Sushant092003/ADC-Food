@@ -1,0 +1,959 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Background Handling */
+.background-container {
+  background: url("../assests/images/Orange 1.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 6%;
+}
+
+.main-logo {
+  height: 40px; /* Adjust based on your logo proportions */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.order-btn-top {
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6% 40px 6%;
+}
+
+.hero-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.hero-text h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  line-height: 1;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 450px;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.wa-btn {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.wa-btn img {
+  width: 20px;
+}
+
+/* Feature Boxes */
+.feature-boxes {
+  display: flex;
+  justify-content: flex-end; /* Aligns boxes to the right under the products */
+  gap: 20px;
+  margin-top: auto;
+}
+
+.feature-item {
+  text-align: center;
+  width: 220px;
+}
+
+.floating-arrow {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.feature-outline {
+  border: 2px solid #fff;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* WHY ADC */
+.why-section {
+  background-color: #ffffff;
+  padding: 80px 6%;
+  color: #630000; /* Dark red matching the brand */
+  text-align: center;
+}
+
+.why-header .badge {
+  border: 1px solid #630000;
+  padding: 5px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.why-header h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  line-height: 1.1;
+}
+
+.problem-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.problem-card {
+  border: 3px solid #630000;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  text-align: left;
+}
+
+.problem-card.reverse {
+  flex-direction: row;
+}
+
+.card-img {
+  flex: 1;
+}
+
+.card-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  flex: 1.2;
+}
+
+.step-num {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  display: block;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Footer Section */
+.why-footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.check-icon {
+  border: 2px solid #630000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Container & Headers */
+.solution-section {
+  padding: 80px 6%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-block;
+  border: 2px solid #630000;
+  padding: 5px 20px;
+  font-family: "Oswald", sans-serif;
+  color: #630000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 56px;
+  color: #630000;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.solution-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* Two columns */
+  grid-gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px; /* Subtle rounding like the image */
+}
+
+/* Protein Card (Top Left) */
+.protein-card {
+  background-color: #4a0404; /* Deep burgundy */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: left;
+}
+
+.protein-card h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.protein-card h3 span {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.protein-card h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.hand-img {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Feature Tags Card (Top Right) */
+.feature-tags-card {
+  background: url("../assests/images/Frame 25.png") center/cover;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tag-row,
+.tag-full-width {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tag-outline {
+  border: 3px solid #fff;
+  background: rgba(0, 0, 0, 0.2); /* Tint for readability */
+  color: #fff;
+  padding: 10px 15px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.plus-sign {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.full-box {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Cook Card (Bottom Span) */
+.cook-card {
+  grid-column: span 2; /* Takes full width of grid */
+  height: 450px;
+}
+
+.bg-kitchen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cook-text {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  text-align: right;
+  color: #fff;
+  max-width: 400px;
+}
+
+.cook-text h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.cook-text h3 span {
+  display: block;
+  font-size: 35px;
+}
+
+.products-listing-section {
+  background-color: #3b0000; /* Deep dark burgundy background */
+  padding: 80px 6%;
+  text-align: center;
+  color: #fff;
+}
+
+.section-tag-light {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.products-main-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.section-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 50px;
+}
+
+/* Category Headers */
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.category-header h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+
+.flavor-count {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Grid Logic */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Column Layout */
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+}
+
+.product-card {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.product-img-box {
+  background: #f4f4f4;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.product-img-box img {
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.buy-wa-btn img {
+  width: 20px; /* Set a fixed width */
+  height: 20px; /* Set a fixed height */
+  object-fit: contain; /* Prevents stretching */
+  display: inline-block;
+  vertical-align: middle; /* Aligns it perfectly with the text */
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title-row h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+}
+
+/* Veg/Non-Veg Icons */
+.veg-non-veg {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  display: inline-block;
+  position: relative;
+}
+.veg-non-veg::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.non-veg {
+  border-color: #ff0000;
+}
+.non-veg::after {
+  background: #ff0000;
+}
+.veg {
+  border-color: #008000;
+}
+.veg::after {
+  background: #008000;
+}
+
+.nutrition-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nutrition-tags span {
+  border: 1px solid #000;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.buy-wa-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #000;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-img-box {
+  position: relative;
+  overflow: hidden;
+  background: #f4f4f4;
+  height: 300px;
+}
+
+.image-hover-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.product-image {
+  max-height: 85%;
+  z-index: 5; /* Keep image on top of color */
+  transition: transform 0.4s ease;
+}
+
+.hover-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Hidden state */
+  transition: height 0.4s ease-in-out;
+  z-index: 1;
+}
+
+/* Trigger Effect */
+.product-card:hover .hover-overlay {
+  height: 100%;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Specific Colors */
+.bbq .hover-overlay {
+  background-color: #451b20;
+}
+.paneer .hover-overlay {
+  background-color: #ce451a;
+}
+.jerk .hover-overlay {
+  background-color: #e6b512;
+}
+.tandoori .hover-overlay {
+  background-color: #a4160c;
+}
+.vanilla .hover-overlay {
+  background-color: #c6a26a;
+}
+.chocolate .hover-overlay {
+  background-color: #341a09;
+}
+.brownie .hover-overlay {
+  background-color: #341a09;
+}
+
+.reviews-section {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #630000;
+  overflow: hidden;
+}
+
+.reviews-header-container {
+  padding: 0 6% 50px 6%;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.badge-outline {
+  display: inline-block;
+  border: 2px solid #630000;
+  padding: 5px 15px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.reviews-header h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.nav-arrow {
+  background: transparent;
+  border: 2px solid #630000;
+  color: #630000;
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+  background: #630000;
+  color: #fff;
+}
+
+/* Slider Logic */
+.reviews-slider-window {
+  overflow: hidden; /* Clips the overflow */
+  width: 100%;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.review-card {
+  min-width: 50vw;
+  background-color: #630000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-img-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.review-content {
+  padding: 30px;
+}
+
+.quote-mark {
+  font-size: 50px;
+  font-family: serif;
+  line-height: 1;
+  display: block;
+  margin-bottom: -10px;
+}
+
+.review-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 6%;
+  background-color: #fff;
+  color: #630000;
+  text-align: center;
+}
+
+.faq-header h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Accordion Item Styling */
+.faq-item {
+  border: 3px solid #630000;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+.faq-question h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.faq-icon {
+  font-size: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Answer Styling (Hidden by default) */
+.faq-answer {
+  max-height: 0;
+  padding: 0 30px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-answer p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 25px;
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+  max-height: 300px; /* Adjust based on content length */
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); /* Turns the + into an x */
+}
+
+/* Footer CSS */
+.adc-main-footer {
+  width: 100%;
+  min-height: 500px;
+  /* Use the provided Footer Image as background */
+  background: url("../assests/images/Footer Image.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 6% 40px 6%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header Alignment (Logo and Slogan) */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo-large {
+  height: 120px; /* Large branding from Frame 25 */
+  width: auto;
+}
+
+.slogan-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 400px;
+  text-align: right;
+  line-height: 1.1;
+}
+
+/* Action Section (Socials and WhatsApp) */
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.footer-socials p {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.social-icon-grid {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon-grid img {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff; /* Square outline from design */
+  padding: 8px;
+  transition: background 0.3s;
+}
+
+.social-icon-grid img:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* WhatsApp Button Logic */
+.order-wa-footer {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 12px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.order-wa-footer img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* Final Copyright Row */
+.footer-bottom {
+  text-align: right;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 50px;
+  }
+  .nav-links {
+    display: none;
+  } /* Hide complex nav on tablets */
+
+  .adc-main-footer {
+    background-position: 70% center; /* Shift bg to keep packets visible */
+    text-align: center;
+  }
+  .footer-top,
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .slogan-text {
+    text-align: center;
+  }
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .background-container {
+    background-attachment: scroll; /* Better performance on mobile */
+  }
+
+  .hero-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin: 0 auto 30px auto;
+  }
+
+  .feature-boxes {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .feature-item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .problem-card,
+  .problem-card.reverse {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .why-header h2 {
+    font-size: 32px;
+  }
+  .card-content h3 {
+    font-size: 22px;
+  }
+  .why-footer {
+    font-size: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr; /* Stacks to 1 column on mobile */
+  }
+  .products-main-title {
+    font-size: 28px;
+  }
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-card {
+    min-width: 100%; /* Shows 1 card on mobile */
+  }
+  .reviews-header h2 {
+    font-size: 32px;
+  }
+}
