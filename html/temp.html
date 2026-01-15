@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADC Foods Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial Black", Arial, sans-serif;
+        background: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .footer-container {
+        width: 100%;
+        max-width: 1200px;
+        background: linear-gradient(
+          135deg,
+          #c04000 0%,
+          #ff8c00 50%,
+          #ffb347 100%
+        );
+        border-radius: 15px;
+        padding: 50px 60px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: repeating-linear-gradient(
+          90deg,
+          #8b0000 0px,
+          #8b0000 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .left-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .logo-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo {
+        font-size: 120px;
+        font-weight: 900;
+        color: white;
+        line-height: 0.9;
+        letter-spacing: -5px;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .logo-subtitle {
+        font-size: 42px;
+        font-weight: 700;
+        color: white;
+        margin-left: 85px;
+        margin-top: -10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .social-section h3 {
+        font-size: 28px;
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 20px;
+      }
+
+      .social-icon {
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        border: 4px solid white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .social-icon:hover {
+        background: white;
+        color: #ff8c00;
+        transform: translateY(-5px);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+      }
+
+      .right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+      }
+
+      .tagline {
+        font-size: 32px;
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+        text-align: right;
+        line-height: 1.2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .products-image {
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.4));
+        transition: transform 0.3s ease;
+      }
+
+      .products-image:hover {
+        transform: scale(1.05);
+      }
+
+      .cta-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+      }
+
+      .order-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 40px;
+        background: transparent;
+        border: 4px solid white;
+        color: white;
+        font-size: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .order-button:hover {
+        background: white;
+        color: #ff8c00;
+        transform: translateY(-3px);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .order-button i {
+        font-size: 26px;
+      }
+
+      .copyright {
+        font-size: 16px;
+        color: white;
+        font-weight: 700;
+        text-align: right;
+        opacity: 0.95;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 968px) {
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .right-section {
+          align-items: center;
+        }
+
+        .tagline {
+          text-align: center;
+          font-size: 28px;
+        }
+
+        .cta-section {
+          align-items: center;
+        }
+
+        .copyright {
+          text-align: center;
+        }
+
+        .logo {
+          font-size: 90px;
+        }
+
+        .logo-subtitle {
+          font-size: 32px;
+          margin-left: 65px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .footer-container {
+          padding: 30px 25px;
+        }
+
+        .logo {
+          font-size: 70px;
+        }
+
+        .logo-subtitle {
+          font-size: 24px;
+          margin-left: 50px;
+        }
+
+        .social-section h3 {
+          font-size: 22px;
+        }
+
+        .social-icon {
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+        }
+
+        .tagline {
+          font-size: 22px;
+        }
+
+        .order-button {
+          font-size: 18px;
+          padding: 14px 30px;
+        }
+
+        .copyright {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="left-section">
+          <div class="logo-section">
+            <div class="logo">ADC</div>
+            <div class="logo-subtitle">foods</div>
+          </div>
+
+          <div class="social-section">
+            <h3>Follow us on:</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <h2 class="tagline">Eat Better Without Slowing Down.</h2>
+
+          <img
+            src="../assests/images/Firefly 20260114235400 1.png"
+            alt="ADC Protein Bites Products"
+            class="products-image" />
+
+          <div class="cta-section">
+            <a href="#" class="order-button">
+              <span>Order Now Via</span>
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <p class="copyright">© 2026 ADC Foods • All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Smooth hover animations
+      const socialIcons = document.querySelectorAll(".social-icon");
+      const orderButton = document.querySelector(".order-button");
+
+      socialIcons.forEach((icon) => {
+        icon.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-5px) rotate(5deg)";
+        });
+
+        icon.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) rotate(0)";
+        });
+      });
+
+      // Add ripple effect to order button
+      orderButton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const ripple = document.createElement("span");
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.cssText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.5);
+                left: ${x}px;
+                top: ${y}px;
+                transform: scale(0);
+                animation: ripple 0.6s ease-out;
+                pointer-events: none;
+            `;
+
+        this.style.position = "relative";
+        this.style.overflow = "hidden";
+        this.appendChild(ripple);
+
+        setTimeout(() => ripple.remove(), 600);
+      });
+
+      // Add CSS animation for ripple
+      const style = document.createElement("style");
+      style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+      document.head.appendChild(style);
+
+      // Parallax effect on scroll (if footer is in a page with scroll)
+      window.addEventListener("scroll", function () {
+        const footer = document.querySelector(".footer-container");
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * 0.3;
+
+        if (footer) {
+          footer.style.transform = `translateY(${rate}px)`;
+        }
+      });
+
+      // Add subtle animation to products image
+      const productsImg = document.querySelector(".products-image");
+      let isAnimating = false;
+
+      function floatAnimation() {
+        if (!isAnimating && productsImg) {
+          isAnimating = true;
+          productsImg.style.transition = "transform 3s ease-in-out";
+          productsImg.style.transform = "translateY(-10px)";
+
+          setTimeout(() => {
+            productsImg.style.transform = "translateY(0)";
+            setTimeout(() => {
+              isAnimating = false;
+            }, 3000);
+          }, 3000);
+        }
+      }
+
+      setInterval(floatAnimation, 6000);
+    </script>
+  </body>
+</html>
