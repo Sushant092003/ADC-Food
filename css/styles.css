@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -8,7 +10,7 @@
 body,
 html {
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Anton SC", sans-serif;
   color: #ffffff;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -34,15 +36,15 @@ html {
 }
 
 .main-logo {
-  height: 40px; /* Adjust based on your logo proportions */
+  height: 60px; /* Adjust based on your logo proportions */
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 13px;
-  font-weight: 600;
+  margin: 0 25px;
+  font-size: 25px;
+  font-weight: 300;
   letter-spacing: 0.5px;
 }
 
@@ -51,8 +53,13 @@ html {
   padding: 10px 25px;
   text-decoration: none;
   color: #fff;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.order-btn-top:hover {
+  background-color: #fff;
+  color: #605f5e;
 }
 
 /* Hero Section */
@@ -71,12 +78,17 @@ html {
   margin-bottom: 50px;
 }
 
+.hero-text {
+  margin-top: 20%;
+}
+
 .hero-text h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 75px;
   line-height: 1;
   margin-bottom: 25px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .hero-text p {
@@ -94,12 +106,17 @@ html {
   padding: 12px 20px;
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   gap: 10px;
 }
 
 .wa-btn img {
   width: 20px;
+}
+
+.wa-btn:hover {
+  background-color: #fff;
+  color: #605f5e;
 }
 
 /* Feature Boxes */
@@ -123,7 +140,7 @@ html {
 .feature-outline {
   border: 2px solid #fff;
   padding: 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 22px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -144,13 +161,13 @@ html {
 .why-header .badge {
   border: 1px solid #630000;
   padding: 5px 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
 .why-header h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 48px;
   margin-top: 25px;
   margin-bottom: 50px;
@@ -194,7 +211,7 @@ html {
 }
 
 .step-num {
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 60px;
   display: block;
   line-height: 1;
@@ -202,7 +219,7 @@ html {
 }
 
 .card-content h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 28px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -215,7 +232,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 32px;
   font-weight: bold;
 }
@@ -242,139 +259,140 @@ html {
   display: inline-block;
   border: 2px solid #630000;
   padding: 5px 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   color: #630000;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .section-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Anton SC", sans-serif;
   font-size: 56px;
   color: #630000;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
 
-/* Grid Layout */
-.solution-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr; /* Two columns */
-  grid-gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px; /* Subtle rounding like the image */
-}
-
-/* Protein Card (Top Left) */
-.protein-card {
-  background-color: #4a0404; /* Deep burgundy */
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-  text-align: left;
-}
-
-.protein-card h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 1;
-}
-
-.protein-card h3 span {
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-.protein-card h4 {
-  font-family: "Oswald", sans-serif;
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.hand-img {
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Feature Tags Card (Top Right) */
-.feature-tags-card {
-  background: url("../assests/images/Frame 25.png") center/cover;
-  padding: 30px;
+.main-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-}
-
-.tag-row,
-.tag-full-width {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.tag-outline {
-  border: 3px solid #fff;
-  background: rgba(0, 0, 0, 0.2); /* Tint for readability */
-  color: #fff;
-  padding: 10px 15px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  flex: 1;
 }
 
-.plus-sign {
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.full-box {
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-}
-
-/* Cook Card (Bottom Span) */
-.cook-card {
-  grid-column: span 2; /* Takes full width of grid */
+.first-row {
+  display: flex;
+  gap: 20px;
   height: 450px;
 }
 
-.bg-kitchen {
+/* Make the left box larger than the right box */
+.first-col {
+  flex: 1.8;
+  position: relative;
+  background-color: #4a0e0e;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.second-col {
+  flex: 1;
+}
+
+/* Image positioning for the hand/bag */
+.overlap-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.col-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 40px;
+  color: #fff;
+  max-width: 50%;
+  margin-bottom: 30%;
+}
+
+.col-content h3 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  color: #fff !important; /* Changed from black to white */
+}
+
+.col-content h3 span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.col-content h4 {
+  font-size: 32px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.col-content p {
+  font-size: 18px;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+.second-col img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.cook-text {
+/* Bottom Row Styling */
+.second-row {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.second-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row-content {
   position: absolute;
   bottom: 40px;
   right: 40px;
   text-align: right;
   color: #fff;
-  max-width: 400px;
+  max-width: 500px;
 }
 
-.cook-text h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 1;
-  text-transform: uppercase;
+.row-content h3 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 0.8;
+  margin-bottom: 15px;
 }
 
-.cook-text h3 span {
+.row-content h3 span {
   display: block;
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.row-content p {
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.2); /* Slight shadow for readability if needed */
+  padding: 5px;
 }
 
 .products-listing-section {
@@ -518,8 +536,8 @@ html {
 .nutrition-tags span {
   border: 1px solid #000;
   padding: 4px 8px;
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .buy-wa-btn {
@@ -531,8 +549,9 @@ html {
   padding: 10px;
   text-decoration: none;
   color: #000;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18px;
+  width: 30%;
 }
 
 .product-img-box {
@@ -616,6 +635,10 @@ html {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 50px;
+}
+
+.header-left {
+  margin-left: 5%;
 }
 
 .badge-outline {
@@ -777,52 +800,42 @@ html {
 /* Footer CSS */
 .adc-main-footer {
   width: 100%;
-  min-height: 500px;
-  /* Use the provided Footer Image as background */
+  min-height: 520px;
   background: url("../assests/images/Footer Image.png") no-repeat center center;
   background-size: cover;
-  position: relative;
-  padding: 80px 6% 40px 6%;
-  color: #fff;
+  display: flex;
+  align-items: stretch;
+  padding: 50px 6%;
+  box-sizing: border-box;
+}
+
+/* MAIN WRAPPER */
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+/* LEFT SIDE */
+.left-side {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-/* Header Alignment (Logo and Slogan) */
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  height: 100%;
 }
 
 .footer-logo-large {
-  height: 120px; /* Large branding from Frame 25 */
-  width: auto;
-}
-
-.slogan-text {
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  max-width: 400px;
-  text-align: right;
-  line-height: 1.1;
-}
-
-/* Action Section (Socials and WhatsApp) */
-.footer-middle {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 40px;
+  width: 260px;
+  height: auto;
 }
 
 .footer-socials p {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
 .social-icon-grid {
@@ -831,44 +844,76 @@ html {
 }
 
 .social-icon-grid img {
-  width: 45px;
-  height: 45px;
-  border: 2px solid #fff; /* Square outline from design */
+  width: 42px;
+  height: 42px;
+  border: 2px solid #fff;
   padding: 8px;
-  transition: background 0.3s;
+  box-sizing: border-box;
 }
 
-.social-icon-grid img:hover {
-  background: rgba(255, 255, 255, 0.2);
+/* RIGHT SIDE */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  height: 100%;
 }
 
-/* WhatsApp Button Logic */
+/* SLOGAN */
+.slogan-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  max-width: 520px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* BOTTOM RIGHT GROUP */
+.bottom-right-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+}
+
+/* ORDER BUTTON */
 .order-wa-footer {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   border: 2px solid #fff;
-  padding: 12px 25px;
+  padding: 10px 22px;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
-  gap: 10px;
+  font-family: "Oswald", sans-serif;
+  transition: all 0.25s ease;
 }
 
+.order-wa-footer:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* WhatsApp icon */
 .order-wa-footer img {
   width: 22px;
   height: 22px;
-  object-fit: contain;
 }
 
-/* Final Copyright Row */
-.footer-bottom {
-  text-align: right;
-  width: 100%;
-  font-weight: 700;
+/* COPYRIGHT */
+.copyright-text {
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
+  color: #fff;
+  font-weight: 400;
   letter-spacing: 0.5px;
-  opacity: 0.9;
+  margin: 0;
 }
 
 /* RESPONSIVENESS */
@@ -955,5 +1000,21 @@ html {
   }
   .reviews-header h2 {
     font-size: 32px;
+  }
+
+  .first-row {
+    flex-direction: column;
+  }
+  .first-col,
+  .second-col,
+  .second-row {
+    height: auto;
+    min-height: 300px;
+  }
+  .col-content h3 {
+    font-size: 40px;
+  }
+  .row-content h3 {
+    font-size: 45px;
   }
 }
