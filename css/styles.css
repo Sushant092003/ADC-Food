@@ -348,7 +348,7 @@ html {
 .first-col {
   flex: 1.8;
   position: relative;
-  background-color: #4a0e0e;
+  background-color: #3b070e;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1010,12 +1010,17 @@ html {
 @media screen and (max-width: 768px) {
   .background-container {
     background: radial-gradient(
-      circle at 50% 40%,
-      #a61c1c 0%,
-      #2b0505 80%,
-      #000000 100%
+      circle at 50% 30%,
+      #8a2be2 0%,
+      #801818 20%,
+      #2e0505 100%
     );
-    background-attachment: fixed;
+
+    /* FIX: Let's use the specific colors from your image */
+    background: radial-gradient(circle at center top, #9c2323 0%, #2b0303 100%);
+
+    background-attachment: fixed; /* Keeps the glow in place while scrolling */
+    min-height: 100vh;
   }
 
   .navbar {
