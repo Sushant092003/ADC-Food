@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,12 +26,35 @@
           <a href="#reviews">REVIEWS</a>
         </nav>
         <a href="#" class="order-btn-top">ORDER NOW</a>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </header>
+
+      <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+
+        <nav class="mobile-nav-content">
+          <a href="#" onclick="toggleMenu()">HOME</a>
+          <a href="#why-adc" onclick="toggleMenu()">WHY ADC?</a>
+          <a href="#how-it-work" onclick="toggleMenu()">HOW IT WORKS</a>
+          <a href="#our-products" onclick="toggleMenu()">OUR PRODUCTS</a>
+          <a href="#reviews" onclick="toggleMenu()">REVIEWS</a>
+        </nav>
+      </div>
 
       <main class="content-wrapper">
         <section class="hero-main">
           <div class="hero-text">
             <h1>REAL FOOD.<br />REAL PROTEIN.<br />REAL RESULTS.</h1>
+
+            <img
+              src="../assests/images/Packets_img.png"
+              alt="Protein Bites Packets"
+              class="product-image-mobile" />
             <p>
               High-protein, ready-to-cook meals made for your busy days. No
               powders. No preservatives. Just food that actually satisfies.

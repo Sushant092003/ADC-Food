@@ -37,7 +37,7 @@ function renderReviews() {
                 <p>${review.text}</p>
             </div>
         </div>
-    `
+    `,
     )
     .join("");
 }
@@ -119,9 +119,19 @@ function renderFAQs() {
                 <p>${faq.answer}</p>
             </div>
         </div>
-    `
+    `,
     )
     .join("");
+}
+
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("active");
+
+  // Optional: Prevent scrolling when menu is open
+  document.body.style.overflow = menu.classList.contains("active")
+    ? "hidden"
+    : "auto";
 }
 
 // 3. Toggle Function
